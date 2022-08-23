@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "galeria-client-side-solution",
+    "id": "1236895d-12fc-4d06-9d1c-1f27e52af2e7",
+    "version": "2.5.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false
+  },
+  "paths": {
+    "zippedPackage": "solution/galeria.sppkg"
+  }
+}

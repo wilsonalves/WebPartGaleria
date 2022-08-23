@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "galeria-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/galeria/GaleriaWebPart.js",
+          "manifest": "./src/webparts/galeria/GaleriaWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "jquery": {
+      "path": "node_modules/jquery/dist/jquery.min.js",
+      "globalName": "jQuery"
+    },
+    "unitegallery": {
+      "path": "src/js/unitegallery/unitegallery.min.js",
+      "globalName": "jQuery",
+      "globalDependencies": [
+        "jquery"
+      ]
+    },
+    "ug-theme-slider": {
+      "path": "src/js/unitegallery/ug-theme-slider.js",
+      "globalName": "jQuery",
+      "globalDependencies": [
+        "jquery",
+        "unitegallery"
+      ]
+    }
+  },
+  "localizedResources": {
+    "GaleriaWebPartStrings": "lib/webparts/galeria/loc/{locale}.js"
+  }
+}
